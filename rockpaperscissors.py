@@ -1,3 +1,4 @@
+import os
 while True:
     name1 = input("Insert the first player's name: ")
     name2 = input("Insert the second player's name: ")
@@ -7,6 +8,9 @@ while True:
     2: Paper
     3: Scissors(type the number of your choice): """))
     print(" ")
+
+    os.system('cls' if os.name == 'nt' else 'clear')
+
     choice2 = int(input(f"""{name2} , your turn, choose bewteen:
     1: Rock
     2: Paper
@@ -32,6 +36,7 @@ while True:
     print("")
     aftermatch = input("Do you want to play again? Yes/No :")
     if aftermatch.lower() == "no":
+        print("Bye bye")
         break
     elif aftermatch.lower() == "yes":
         continue
