@@ -17,7 +17,7 @@ while True:
         else:
             break
     except ValueError:
-        print("Please type a valid number")
+        print("Please type a valid number or use numbers, not letters")
 
 word = []
 for x in range(charact):
